@@ -1,0 +1,45 @@
+name: secure_comms
+description: A secure communication and VPN app.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # --- CORE ---
+  provider: ^6.1.2
+  lottie: ^3.1.2
+  intl: ^0.19.0
+
+  # --- FIREBASE ---
+  firebase_core: ^3.1.0
+  firebase_auth: ^5.1.0
+  cloud_firestore: ^5.0.1
+  firebase_storage: ^12.1.0
+
+  # --- UTILS ---
+  # UPDATED: Use the latest file_picker to fix Android build errors
+  file_picker: ^8.1.2 
+  # UPDATED: Use specific version to match our code logic
+  connectivity_plus: ^6.0.3 
+  webview_flutter: ^4.8.0
+  
+  # --- VPN ---
+  wireguard_flutter: ^0.1.3
+
+  # --- NATIVE ---
+  # flutter_windowmanager: ^0.2.0 # Uncomment if needed later
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/animations/
